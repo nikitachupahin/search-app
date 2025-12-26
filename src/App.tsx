@@ -35,7 +35,14 @@ export default function App() {
         setVideos(results);
       } catch (err) {
         if (err instanceof Error) {
-          setError('Error uploading video');
+          if (err.name === 'AbortError') {
+            console.log('Request canceled');
+          } else {
+            setError('Error uploading video');
+            console.error('Error uploading video:', err.message);
+          }
+        } else {
+          setError('An unexpected error occurred');
         }
       } finally {
         setIsLoading(false);

@@ -2,6 +2,11 @@
 
 A fully functional Single Page Application for YouTube video search, built on React using TypeScript and Tailwind CSS.
 
+## 🔴 Live Preview
+You can view the deployed version of the project here:
+
+- [DEMO LINK](https://youtubevideosearchapp.netlify.app)
+
 ## 🚀 Getting Started
 To get a local copy up and running, follow these simple steps.
 
